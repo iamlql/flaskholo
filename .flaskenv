@@ -1,0 +1,2 @@
+FLASK_APP=flaskholo
+FLASK_ENV=development

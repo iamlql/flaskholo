@@ -1,0 +1,13 @@
+
+
+*.db
+*.h5
+.env
+
+images/
+uploads/
+test/
+detector_model/
+detector/
+flaskholo/detector_model/
+flaskholo/*.h5
