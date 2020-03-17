@@ -23,6 +23,7 @@ whooshee = Whooshee()
 avatars = Avatars()
 csrf = CSRFProtect()
 md = MentuDetector()
+md.detect_img(os.path.join(os.path.join(basedir, 'uploads'), 'test.jpg'))
 
 
 @login_manager.user_loader

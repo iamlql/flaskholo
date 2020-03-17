@@ -114,10 +114,6 @@ uploads/avatars/*
 
 whooshee
 
-*.db
 *.h5
-.env
-instance/
 images/
-uploads/
 test/

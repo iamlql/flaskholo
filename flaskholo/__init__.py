@@ -27,12 +27,12 @@ def create_app(config_name=None):
 
     register_extensions(app)
     register_blueprints(app)
+    register_detector(app)
     register_commands(app)
     register_errorhandlers(app)
     register_shell_context(app)
     register_template_context(app)
-    register_detector(app)
-
+    
     return app
 
 
@@ -48,11 +48,12 @@ def register_extensions(app):
     csrf.init_app(app)
     
     
-def register_detector(app):
-    @app.before_first_request
-    def make_detector_init():
-        md.init_model()
-        md.detect_img(os.path.join(os.path.join(basedir, 'uploads'), 'test.jpg'))
+# def register_detector(app):
+#     @app.before_first_request
+#     def make_detector_init():
+#         pass
+        # md.init_model()
+        # md.detect_img(os.path.join(os.path.join(basedir, 'uploads'), 'test.jpg'))
 
 def register_blueprints(app):
     app.register_blueprint(main_bp)

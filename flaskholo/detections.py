@@ -63,7 +63,7 @@ class MentuDetector():
         self.class_mapping = {v: k for k, v in class_mapping.items()}
         self.class_to_color = {self.class_mapping[v]: np.random.randint(0, 255, 3) for v in self.class_mapping}
 
-    def init_model(self):
+    # def init_model(self):
         input_shape_img = (None, None, 3)
         input_shape_features = (None, None, 1024)
 
